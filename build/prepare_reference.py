@@ -17,4 +17,3 @@ if old_required not in text or old_ram not in text:
 	raise SystemExit("reference build.py does not match the pinned source")
 text = text.replace(old_required, new_required).replace(old_ram, "")
 path.write_text(text, encoding="utf-8")
-

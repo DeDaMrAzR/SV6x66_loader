@@ -40,4 +40,3 @@ SECTIONS
 }
 
 ASSERT(SIZEOF(.entry) + SIZEOF(.text) + SIZEOF(.data) + SIZEOF(.bss) <= LENGTH(ILM), "RAM agent exceeds ILM")
-
