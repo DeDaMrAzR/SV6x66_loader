@@ -48,8 +48,6 @@ dual-slot staging profile above.
 - `agent/`: RAM-only flash reader/writer and linker script.
 - `host/`: protocol constants, stage packer, and validation tests.
 - `build/`: reproducible container build entry point.
-- `artifacts/`: generated binaries and logs are excluded; the reference checksum
-  manifest is retained.
 
 The build requires the pinned OpenBK7231T_App SV6x66 port, OpenSV6x66 SDK, and
 Andes NDS32 toolchain described in `build/README.md`. Those components are not
@@ -59,5 +57,6 @@ redistributed here.
 
 This is a development reference, not a general-purpose release. The current
 loader and RAM-agent read path are clean-build and device tested on the named
-CKW04 hardware. Device validation of the exact current writer artifact remains
-pending. See `VALIDATION.md` for hashes and evidence boundaries.
+CKW04 hardware. An earlier writer revision completed a full clone, readback,
+and restoration cycle. Device validation of the exact current writer revision
+remains pending.

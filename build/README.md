@@ -14,4 +14,4 @@ Required inputs:
 
 The local validation uses the `openbk_builder` container and invokes
 `build/build.sh` with those three mounted paths. Release hashes are written to
-`artifacts/SHA256SUMS`.
+`SHA256SUMS` alongside the generated binaries in the selected output directory.

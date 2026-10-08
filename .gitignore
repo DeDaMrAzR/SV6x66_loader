@@ -1,6 +1,4 @@
-artifacts/*
-!artifacts/.gitkeep
-!artifacts/SHA256SUMS
+artifacts/
 build/out/
 __pycache__/
 *.pyc
